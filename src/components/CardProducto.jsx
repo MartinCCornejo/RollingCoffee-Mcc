@@ -1,20 +1,20 @@
-import { Col,Card, Button } from "react-bootstrap";
+import { Col, Card, Button } from "react-bootstrap";
 
-const CardProducto = () => {
+const CardProducto = ({ image, titulo, descripcion, precio }) => {
   return (
-    <Col>
+    <Col lg={4} md={6} className="mb-4">
       <Card className="card-customized h-100">
-        <Card.Img variant="top" src='https://th.bing.com/th/id/R.793127db17ef0bf7cbf42d8ff997caa6?rik=xJh8aaQrJwkMDg&pid=ImgRaw&r=0' className="img-fluid w-100"/>
-        <Card.Body>
-          <Card.Title className="text-success fw-bold fs-4">Café Americano</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
+        <div className="card-img-container">
+        <Card.Img variant="top" src={image} className="img-card-customized" />
+        </div>
+        <Card.Body className="pb-1 d-flex flex-column justify-content-between">
+          <h2 className="main-color fs-5 fw-semibold">{titulo}</h2>
+          <p className="fw-medium">{descripcion}</p>
+          <h3 className="fw-bold fs-3">{precio}</h3>
         </Card.Body>
-          <Card.Footer className="text-end">
-            <Button variant="success">Ver más</Button>
-          </Card.Footer>
+        <Card.Footer>
+          <Button variant="success">Ver más</Button>
+        </Card.Footer>
       </Card>
     </Col>
   );
