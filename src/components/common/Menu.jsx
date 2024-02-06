@@ -6,7 +6,7 @@ const Menu = () => {
         <Navbar expand="lg" className="bg-body-tertiary navbar">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo de RollingCOffee" className="img-fluid" width={170}/>
+          <img src={logo} alt="Logo de RollingCOffee" className="img-fluid" width={160}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
