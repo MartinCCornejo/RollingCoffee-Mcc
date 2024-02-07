@@ -4,7 +4,7 @@ import CardProducto from "./CardProducto";
 const Table = () => {
   return (
     <Container>
-      <h1 className="fs-1 mt-5 mb-4 fw-medium ">Nuestros Productos</h1>
+      <h1 className="fs-1 mt-4 mb-3 fw-medium "><span className="text-success display-4 fw-semibold">N</span>uestros Productos</h1>
       <Row>
         <CardProducto
         titulo={'Café Americano'}
