@@ -1,0 +1,14 @@
+{
+    "productos": [
+        {
+            "nombreProducto" :"cafe",
+            "precio" :250,
+            "categoria" :"bebida caliente",
+            "descripcionBreve" :"Cafe riquisimo",
+            "descripcionAmplia" :"descripcion ampliada",
+            "imagen" :"URL",
+            "disponibilidad" : true,
+            "id" : "1"
+        }
+    ]
+}
