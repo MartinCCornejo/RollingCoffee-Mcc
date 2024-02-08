@@ -60,6 +60,8 @@ p,input{
   border-radius: 50%;
 }
 
-
-
-
+.img-detalle{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}

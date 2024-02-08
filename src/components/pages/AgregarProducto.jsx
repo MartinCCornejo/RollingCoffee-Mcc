@@ -3,7 +3,7 @@ import { Button, Container, Form } from "react-bootstrap";
 const AgregarProducto = () => {
   return (
     <Container className="flex-grow-1 my-5">
-      <h1 className="mt-5 pt-5">Nuevo producto</h1>
+      <h1 className="mt-5 pt-4"><span className="text-success display-4 fw-semibold">N</span>uevo producto</h1>
       <hr className="text-success" />
       <Form>
         <Form.Group className="mb-3" controlId="producto">
@@ -40,7 +40,7 @@ const AgregarProducto = () => {
           </Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ej: El café es una popular bebida derivada de los granos tostados de la planta Coffea. Originario de Etiopía, se cultiva en todo el mundo, principalmente en países como Brasil y Colombia. Hay dos variedades principales: arabica y robusta. Se procesa de varias maneras y se puede preparar de diferentes formas, como goteo o espresso. Además de ser una bebida, el café es un símbolo cultural de socialización y arte. Se han estudiado sus posibles beneficios para la salud, aunque también se han planteado preocupaciones sobre el consumo excesivo de cafeína."
+            placeholder="Agregue una descripción detallada"
           />
         </Form.Group>
         <Button variant="success" className="text-montserrat fw-semibold mt-3">Guardar</Button>

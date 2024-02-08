@@ -5,7 +5,7 @@ const Administrador = () => {
   return (
     <Container className="flex-grow-1 my-5">
       <div className="mt-5 d-flex justify-content-between align-items-center mb-3">
-        <h1 className="pt-5">Productos disponibles</h1>
+        <h1 className="pt-4"><span className="text-success display-4 fw-semibold">P</span>roductos disponibles</h1>
         <div className="pt-5">
           <NavLink end to={'/agregar-producto'}>
           <Button variant="primary">
