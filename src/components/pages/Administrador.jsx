@@ -1,4 +1,5 @@
 import { Button, Container, Table } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 const Administrador = () => {
   return (
@@ -6,9 +7,11 @@ const Administrador = () => {
       <div className="mt-5 d-flex justify-content-between align-items-center mb-3">
         <h1 className="pt-5">Productos disponibles</h1>
         <div className="pt-5">
+          <NavLink end to={'/agregar-producto'}>
           <Button variant="primary">
             <i className="bi bi-file-earmark-plus"></i>
           </Button>
+          </NavLink>
         </div>
       </div>
       <Table striped bordered hover>
