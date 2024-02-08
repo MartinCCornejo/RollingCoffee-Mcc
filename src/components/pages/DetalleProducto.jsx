@@ -6,14 +6,14 @@ const DetalleProducto = () => {
       <h1 className="mt-5 pt-4"><span className="text-success display-4 fw-semibold">D</span>etalle del producto</h1>
       <hr className="text-success" />
       <Row className="justify-content-center align-items-center">
-        <Col lg={5}>
+        <Col md={5} className="mb-4 mb-md-0">
           <img
             src="https://th.bing.com/th/id/OIP.yahamQvZ7L4Placs0V2upwHaLH?rs=1&pid=ImgDetMain"
             alt="Imagen del producto"
             className="img-detalle"
           />
         </Col>
-        <Col lg={6}>
+        <Col md={5}>
           <h2 className="main-color fw-semibold text-uppercase">Capuchino</h2>
           <hr />
           <p>
