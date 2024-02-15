@@ -1,5 +1,6 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import "../../helpers/queries.js"
 
 const AgregarProducto = () => {
   const {
@@ -49,8 +50,12 @@ const AgregarProducto = () => {
             {...register("precio", {
               required: "El precio es obligatorio",
               min: {
-                value: 0,
-                message: "El precio debe ser mayor o igual a 0",
+                value: 100,
+                message: "El monto debe ser mínimo de $100",
+              },
+              max: {
+                value: 10000,
+                message: "El monto debe ser máximo de $10.000",
               },
             })}
           />
