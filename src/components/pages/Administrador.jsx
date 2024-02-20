@@ -1,7 +1,24 @@
 import { Button, Container, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { leerProductosAPI } from "../../helpers/queries";
 
 const Administrador = () => {
+  const { productos, setProductos } = useState([]);
+
+  useEffect(() => {
+    obtenerProductos();
+  }, []);
+
+  async function obtenerProductos () {
+    const respuesta = await leerProductosAPI();
+      if (respuesta.status === 200) {
+        const datos = await respuesta.json();
+        setProductos(datos);
+      } else {
+      }
+  }
+
   return (
     <Container className="flex-grow-1 my-5">
       <div className="mt-5 d-flex justify-content-between align-items-center mb-3">

@@ -3,7 +3,7 @@ const URI_Producto = import.meta.env.VITE_API_PRODUCTO;
 console.log(URI_Producto);
 
 // POST
-async function crearProductoAPI (productoNuevo) {
+export async function crearProductoAPI (productoNuevo) {
     try {
         const respuesta = await fetch(URI_Producto, {
             method: "POST",
@@ -16,8 +16,18 @@ async function crearProductoAPI (productoNuevo) {
         return respuesta;
 
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 }
 
-export {crearProductoAPI}
+// GET 
+
+export async function leerProductosAPI () {
+    try {
+        const respuesta = await fetch(URI_Producto);
+        console.log(respuesta)
+        // return respuesta;
+    } catch (error) {
+        console.log(error);
+    }
+}
