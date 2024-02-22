@@ -70,3 +70,7 @@ p,input{
   width: 100%;
   object-fit: cover;
 }
+
+.mt-6{
+  margin-top: 140px;
+}
