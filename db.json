@@ -1,79 +1,6 @@
 {
   "productos": [
     {
-      "nombreProducto": "cafe",
-      "precio": 250,
-      "categoria": "bebida caliente",
-      "descripcionBreve": "Cafe riquisimo",
-      "descripcionAmplia": "descripcion ampliada",
-      "imagen": "URL",
-      "disponibilidad": true,
-      "id": "1"
-    },
-    {
-      "id": "6637",
-      "nombreProducto": "cafe",
-      "precio": "100",
-      "imagen": "https://sadasd.png",
-      "categoria": "1",
-      "descripcionBreve": "asdasdasd",
-      "descripcionAmplia": "asdasdasdasdasd"
-    },
-    {
-      "id": "3466",
-      "nombreProducto": "asd",
-      "precio": "2332",
-      "imagen": "https://asdadsasdasd.qweqwe.png",
-      "categoria": "1",
-      "descripcionBreve": "asdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    },
-    {
-      "id": "92e0",
-      "nombreProducto": "Brownie",
-      "precio": "1212",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    },
-    {
-      "id": "dcb3",
-      "nombreProducto": "Brownie",
-      "precio": "1212",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    },
-    {
-      "id": "6107",
-      "nombreProducto": "Brownie",
-      "precio": "1212",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    },
-    {
-      "id": "925b",
-      "nombreProducto": "Brownie",
-      "precio": "1212",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    },
-    {
-      "id": "6e25",
-      "nombreProducto": "Brownie",
-      "precio": "1212",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    },
-    {
       "id": "313e",
       "nombreProducto": "Brownie",
       "precio": "1212",
@@ -81,42 +8,6 @@
       "categoria": "2",
       "descripcionBreve": "asdasdasdasdasd",
       "descripcionAmplia": "asdddasdasd"
-    },
-    {
-      "id": "50c8",
-      "nombreProducto": "asdasdasd",
-      "precio": "1232",
-      "imagen": "https://asdiasdijasidasd.jpg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdsssssssasd"
-    },
-    {
-      "id": "f89d",
-      "nombreProducto": "asdasdasdasd",
-      "precio": "2323",
-      "imagen": "https://kjasdijoasd.jpg",
-      "categoria": "2",
-      "descripcionBreve": "asdddddddas",
-      "descripcionAmplia": "dasdsasdasdasd"
-    },
-    {
-      "id": "9cdd",
-      "nombreProducto": "asdasdasd",
-      "precio": "2323",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdddddddasasd",
-      "descripcionAmplia": "dasdsasdasdasd"
-    },
-    {
-      "id": "f373",
-      "nombreProducto": "Licuado de frutilla",
-      "precio": "1700",
-      "imagen": "https://cdn.pixabay.com/photo/2015/10/12/20/03/smoothie-985052_960_720.jpg",
-      "categoria": "1",
-      "descripcionBreve": "Un exquisito licuado de frutilla",
-      "descripcionAmplia": "adsasdasdasdasdasdsdadasdasd"
     }
   ],
   "usuarios": [
