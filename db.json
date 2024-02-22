@@ -1,5 +1,15 @@
 {
-  "productos": [],
+  "productos": [
+    {
+      "id": "9138",
+      "nombreProducto": "dasdasdasd",
+      "precio": "2323",
+      "imagen": "https://KJASdkasd.jpg",
+      "categoria": "2",
+      "descripcionBreve": "asdasdasdasdasdasd",
+      "descripcionAmplia": "asdasdasdasdasdasd"
+    }
+  ],
   "usuarios": [
     {
       "email": "admin@gmail.com",
