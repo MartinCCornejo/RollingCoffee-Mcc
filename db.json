@@ -1,15 +1,5 @@
 {
-  "productos": [
-    {
-      "id": "313e",
-      "nombreProducto": "Brownie",
-      "precio": "1212",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasd",
-      "descripcionAmplia": "asdddasdasd"
-    }
-  ],
+  "productos": [],
   "usuarios": [
     {
       "email": "admin@gmail.com",

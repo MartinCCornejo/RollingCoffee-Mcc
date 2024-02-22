@@ -38,7 +38,6 @@ export async function borrarProductoAPI(id) {
     const respuesta = await fetch(`${URI_Producto}/${id}`, {
       method: "DELETE"
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.log(error);
