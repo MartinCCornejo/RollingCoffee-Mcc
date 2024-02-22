@@ -108,6 +108,15 @@
       "categoria": "2",
       "descripcionBreve": "asdddddddasasd",
       "descripcionAmplia": "dasdsasdasdasd"
+    },
+    {
+      "id": "f373",
+      "nombreProducto": "Licuado de frutilla",
+      "precio": "1700",
+      "imagen": "https://cdn.pixabay.com/photo/2015/10/12/20/03/smoothie-985052_960_720.jpg",
+      "categoria": "1",
+      "descripcionBreve": "Un exquisito licuado de frutilla",
+      "descripcionAmplia": "adsasdasdasdasdasdsdadasdasd"
     }
   ],
   "usuarios": [
