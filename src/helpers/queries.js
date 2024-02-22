@@ -25,7 +25,7 @@ export async function crearProductoAPI (productoNuevo) {
 export async function leerProductosAPI () {
     try {
         const respuesta = await fetch(URI_Producto);
-        console.log(respuesta)
+        return respuesta;
         // return respuesta;
     } catch (error) {
         console.log(error);
