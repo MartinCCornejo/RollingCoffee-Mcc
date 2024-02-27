@@ -1,13 +1,13 @@
 {
   "productos": [
     {
-      "id": "9138",
-      "nombreProducto": "dasdasdasd",
-      "precio": "2323",
-      "imagen": "https://KJASdkasd.jpg",
-      "categoria": "2",
-      "descripcionBreve": "asdasdasdasdasdasd",
-      "descripcionAmplia": "asdasdasdasdasdasd"
+      "id": "ebd5",
+      "nombreProducto": "Cafe",
+      "precio": "2321",
+      "imagen": "https://hnjasjdasd.jpg",
+      "categoria": "1",
+      "descripcionBreve": "adsasdasdas",
+      "descripcionAmplia": "dasdasdasdasdsadasd"
     }
   ],
   "usuarios": [

@@ -1,46 +1,70 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import {crearProductoAPI} from "../../helpers/queries";
+import {crearProductoAPI, obtenerProductoAPI} from "../../helpers/queries";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-const AgregarProducto = () => {
+const AgregarProducto = ({editar,titulo}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
+    setValue
   } = useForm();
 
-  const onSubmit = async (producto) => {
-    console.log(producto);
-    // LLamar a la funcion encargada de pedirle a la api crear un producto
-    const respuesta = await crearProductoAPI(producto);
-    // Agregar un mensaje si el codigo es 201, todo salio bien, caso contrario mostrar un mensaje de que ocurrio un error 
-    if (respuesta.status === 201) {
-      Swal.fire({
-        title: "Buen trabajo!",
-        text: "El producto fue creado correctamente",
-        icon: "success"
-      });
-      reset();
+  const {id} = useParams();
 
-    } else {
-      Swal.fire({
-        title: "Ocurrio un error!",
-        text: `Èl producto "${producto.nombreProducto}" no pudo ser agregado, intentelo de nuevo en unos minutos`,
-        icon: "error"
-      });
+  useEffect(()=> {
+    if (editar) {
+      cargarDatosProductos();
     }
-    
-    console.log(respuesta);
+  },[])
+
+  async function cargarDatosProductos () {
+    console.log(id)
+    const respuesta = await obtenerProductoAPI(id);
+    if (respuesta.status === 200) {
+      const productoBuscado = await respuesta.json();
+      setValue('nombreProducto',productoBuscado.nombreProducto);
+      setValue('precio',productoBuscado.precio);
+      setValue('imagen',productoBuscado.imagen);
+      setValue('categoria',productoBuscado.categoria);
+      setValue('descripcionBreve',productoBuscado.descripcionBreve);
+      setValue('descripcionAmplia',productoBuscado.descripcionAmplia);
+    }
+  }
+
+  const onSubmit = async (producto) => {
+    if (editar) {
+      // Aqui agregar la solicitud a la api para editar un producto
+      console.log('editar')
+    } else {
+      // LLamar a la funcion encargada de pedirle a la api crear un producto
+      const respuesta = await crearProductoAPI(producto);
+      // Agregar un mensaje si el codigo es 201, todo salio bien, caso contrario mostrar un mensaje de que ocurrio un error 
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: "Buen trabajo!",
+          text: "El producto fue creado correctamente",
+          icon: "success"
+        });
+        reset();
+  
+      } else {
+        Swal.fire({
+          title: "Ocurrio un error!",
+          text: `Èl producto "${producto.nombreProducto}" no pudo ser agregado, intentelo de nuevo en unos minutos`,
+          icon: "error"
+        });
+      }
+    }
   };
 
   return (
     <Container className="flex-grow-1 my-5">
-      <h1 className="mt-5 pt-4">
-        <span className="text-success display-4 fw-semibold">N</span>uevo
-        producto
-      </h1>
+      <h1 className="mt-5 pt-4">{titulo}</h1>
       <hr className="text-success" />
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="producto">

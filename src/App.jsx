@@ -13,6 +13,7 @@ import "./App.css";
 
 
 function App() {
+
   return (
     // Administrador de rutas 
     <BrowserRouter>
@@ -21,8 +22,8 @@ function App() {
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
         <Route exact path="/administrador" element={<Administrador></Administrador>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
-        <Route exact path="/administrador/agregar-producto" element={<AgregarProducto></AgregarProducto>}></Route>
-        <Route exact path="/administrador/editar-producto/:id" element={<AgregarProducto></AgregarProducto>}></Route>
+        <Route exact path="/administrador/agregar-producto" element={<AgregarProducto editar={false} titulo={'Nuevo producto'}></AgregarProducto>}></Route>
+        <Route exact path="/administrador/editar-producto/:id" element={<AgregarProducto editar={true}  titulo={'Editar producto'}></AgregarProducto>}></Route>
         <Route exact path="/login" element={<Login></Login>}></Route>
         <Route exact path="/detalle-producto" element={<DetalleProducto></DetalleProducto>}></Route>
       </Routes>

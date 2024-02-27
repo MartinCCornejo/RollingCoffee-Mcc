@@ -43,3 +43,15 @@ export async function borrarProductoAPI(id) {
     console.log(error);
   }
 }
+
+// GET de un producto
+
+export async function obtenerProductoAPI(id) {
+  try {
+    const respuesta = await fetch(`${URI_Producto}/${id}`);
+    console.log(respuesta)
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+}
