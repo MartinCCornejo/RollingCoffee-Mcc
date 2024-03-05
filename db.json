@@ -2,7 +2,7 @@
   "productos": [
     {
       "nombreProducto": "Cafe Espresso Italiano",
-      "precio": "700",
+      "precio": "800",
       "imagen": "https://www.frenchpresscoffee.com/cdn/shop/products/espresso-italiano.jpg",
       "categoria": "Bebidas Calientes",
       "descripcionBreve": "Disfruta de un auténtico sabor italiano con nuestro Espresso Italiano",
