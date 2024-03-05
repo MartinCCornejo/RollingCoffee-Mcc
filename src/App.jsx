@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/administrador/agregar-producto" element={<AgregarProducto editar={false} titulo={'Nuevo producto'}></AgregarProducto>}></Route>
         <Route exact path="/administrador/editar-producto/:id" element={<AgregarProducto editar={true}  titulo={'Editar producto'}></AgregarProducto>}></Route>
         <Route exact path="/login" element={<Login></Login>}></Route>
-        <Route exact path="/detalle-producto" element={<DetalleProducto></DetalleProducto>}></Route>
+        <Route exact path="/detalle-producto/:id" element={<DetalleProducto></DetalleProducto>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

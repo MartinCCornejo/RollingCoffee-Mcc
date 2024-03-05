@@ -49,7 +49,7 @@ export async function borrarProductoAPI(id) {
 export async function obtenerProductoAPI(id) {
   try {
     const respuesta = await fetch(`${URI_Producto}/${id}`);
-    console.log(respuesta)
+    // console.log(respuesta)
     return respuesta;
   } catch (error) {
     console.log(error);
@@ -67,7 +67,7 @@ export async function modificarProductoAPI (producto,id) {
       },
       body: JSON.stringify(producto)
     });
-    console.log(respuesta)
+    // console.log(respuesta)
     return respuesta;
   } catch (error) {
     console.log(error);
