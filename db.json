@@ -1,5 +1,15 @@
 {
-  "productos": [],
+  "productos": [
+    {
+      "nombreProducto": "Cafe Espresso Italiano",
+      "precio": "700",
+      "imagen": "https://www.frenchpresscoffee.com/cdn/shop/products/espresso-italiano.jpg",
+      "categoria": "Bebidas Calientes",
+      "descripcionBreve": "Disfruta de un auténtico sabor italiano con nuestro Espresso Italiano",
+      "descripcionAmplia": " Nuestro Espresso Italiano es la esencia misma del café italiano: intenso, aromático y lleno de sabor. Utilizamos una cuidadosa selección de granos de café arábica y robusta, cultivados en las regiones más fértiles del mundo, para garantizar una experiencia de café inigualable.  Cada taza de nuestro Espresso Italiano es preparada por baristas expertos que dominan el arte de la extracción perfecta. El resultado es un espresso equilibrado, con un cuerpo sedoso, un aroma embriagador y un sabor profundo y duradero.",
+      "id": "76a5"
+    }
+  ],
   "usuarios": [
     {
       "email": "admin@gmail.com",

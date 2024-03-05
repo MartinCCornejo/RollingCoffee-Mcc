@@ -11,7 +11,7 @@ const CardProducto = ({producto}) => {
         <Card.Body className="pb-0 d-flex flex-column justify-content-between">
           <h2 className="main-color fs-5 fw-semibold">{producto.nombreProducto}</h2>
           <p>{producto.descripcionBreve}</p>
-          <h3 className="fw-bold fs-3">{producto.precio}</h3>
+          <h3 className="fw-bold fs-3">${producto.precio}</h3>
         </Card.Body>
         <Card.Footer className="d-flex justify-content-between align-items-center">
           <Button variant="outline-success border-radius-50">

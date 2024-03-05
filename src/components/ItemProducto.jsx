@@ -42,10 +42,10 @@ const ItemProducto = ({ producto,setProductos }) => {
 
   return (
     <tr>
-      <td className="text-center">{producto.id}</td>
-      <td>{producto.nombreProducto}</td>
-      <td className="text-center">{producto.precio}</td>
-      <td className="text-center">
+      <td className="text-center overflow-hidden text-truncate">{producto.id}</td>
+      <td className="overflow-hidden text-truncate">{producto.nombreProducto}</td>
+      <td className="text-center overflow-hidden text-truncate">${producto.precio}</td>
+      <td className="text-center overflow-hidden text-truncate">
         <img
           src={producto.imagen}
           alt="Imagen del producto"
@@ -53,8 +53,8 @@ const ItemProducto = ({ producto,setProductos }) => {
           width={130}
         />
       </td>
-      <td>{producto.categoria}</td>
-      <td className="text-center">
+      <td className="overflow-hidden text-truncate">{producto.categoria}</td>
+      <td className="text-center overflow-hidden text-truncate">
         <Link className="btn btn-warning" to={"/administrador/editar-producto/"+producto.id}>
           <i className="bi bi-pencil-square"></i>
         </Link>

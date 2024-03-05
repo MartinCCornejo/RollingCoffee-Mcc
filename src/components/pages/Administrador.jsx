@@ -41,7 +41,7 @@ const Administrador = () => {
           </Link>
         </div>
       </div>
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive>
         <thead className="text-center text-uppercase">
           <tr>
             <th>Cod</th>

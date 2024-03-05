@@ -151,10 +151,10 @@ const AgregarProducto = ({editar,titulo}) => {
             {...register("categoria", { required: "Seleccione una categoría" })}
           >
             <option value="">Seleccione una opción</option>
-            <option value="Bebidas Calientes">Infusiones</option>
-            <option value="Bebidas Frías">Batidos</option>
-            <option value="Pastelería y Dulces">Dulce</option>
-            <option value="Desayunos y Snacks">Salado</option>
+            <option value="Bebidas Calientes">Bebidas Calientes</option>
+            <option value="Bebidas Frías">Bebidas Frías</option>
+            <option value="Pastelería y Dulces">Pastelería y Dulces</option>
+            <option value="Desayunos y Snacks">Desayunos y Snacks</option>
           </Form.Select>
           <Form.Text className="text-danger">
             {errors.categoria?.message}
@@ -168,12 +168,12 @@ const AgregarProducto = ({editar,titulo}) => {
             {...register("descripcionBreve", {
               required: "Este campo es obligatorio",
               minLength: {
-                value: 5,
-                message: "Debe ingresar como mínimo 5 caracteres",
+                value: 10,
+                message: "Debe ingresar como mínimo 10 caracteres",
               },
               maxLength: {
-                value: 40,
-                message: "Debe ingresar como máximo 40 caracteres",
+                value: 70,
+                message: "Debe ingresar como máximo 70 caracteres",
               },
             })}
           />
@@ -191,12 +191,12 @@ const AgregarProducto = ({editar,titulo}) => {
             {...register("descripcionAmplia", {
               required: "Este campo es obligatorio",
               minLength: {
-                value: 10,
-                message: "Debe ingresar como mínimo 10 caracteres",
+                value: 15,
+                message: "Debe ingresar como mínimo 15 caracteres",
               },
               maxLength: {
-                value: 700,
-                message: "Debe ingresar como máximo 700 caracteres",
+                value: 800,
+                message: "Debe ingresar como máximo 800 caracteres",
               },
             })}
           />
