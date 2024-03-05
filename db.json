@@ -10,13 +10,13 @@
       "id": "76a5"
     },
     {
-      "id": "fa7a",
       "nombreProducto": "Capuchino Clásico",
-      "precio": "1002",
+      "precio": "999",
       "imagen": "https://www.clarin.com/2022/03/01/ceq4FUBv9_2000x1500__1.jpg",
       "categoria": "Bebidas Calientes",
       "descripcionBreve": "Sumérgete en la deliciosa cremosidad de nuestro Capuchino Clásico.",
-      "descripcionAmplia": "Nuestro Capuchino Clásico es una obra maestra de la simplicidad y el sabor. Comenzamos con un espresso de calidad premium, extraído con maestría por nuestros baristas expertos. Luego, la espuma de leche vaporizada se vierte con precisión sobre el espresso, creando una capa cremosa que suaviza el carácter del café y resalta sus notas más sutiles.  El toque final de polvo de cacao sobre la espuma añade un toque de dulzura y complejidad, elevando aún más la experiencia sensorial de nuestro Capuchino Clásico."
+      "descripcionAmplia": "Nuestro Capuchino Clásico es una obra maestra de la simplicidad y el sabor. Comenzamos con un espresso de calidad premium, extraído con maestría por nuestros baristas expertos. Luego, la espuma de leche vaporizada se vierte con precisión sobre el espresso, creando una capa cremosa que suaviza el carácter del café y resalta sus notas más sutiles.  El toque final de polvo de cacao sobre la espuma añade un toque de dulzura y complejidad, elevando aún más la experiencia sensorial de nuestro Capuchino Clásico.",
+      "id": "fa7a"
     },
     {
       "id": "0a61",
@@ -26,6 +26,15 @@
       "categoria": "Pastelería y Dulces",
       "descripcionBreve": "Deléitate con nuestro exquisito Croissant de Chocolate.",
       "descripcionAmplia": "Nuestro Croissant de Chocolate es una obra maestra de la pastelería artesanal. Comenzamos con una masa de hojaldre finamente laminada, que se hornea hasta obtener una textura dorada y crujiente en el exterior, mientras que en el interior se mantiene suave y esponjosa.  El relleno de chocolate se prepara con cuidado, utilizando auténtico chocolate de calidad premium, derretido hasta obtener una consistencia sedosa y deliciosa. Cada bocado de nuestro Croissant de Chocolate es una explosión de sabor, con la combinación perfecta de hojaldre dorado y chocolate derretido."
+    },
+    {
+      "id": "fa58",
+      "nombreProducto": "Batido de Frutas Tropicales",
+      "precio": "1000",
+      "imagen": "https://s1.abcstatics.com/media/gurmesevilla/2013/08/batido-frutas-tropicales.jpg",
+      "categoria": "Bebidas Frías",
+      "descripcionBreve": "Refréscate con nuestro Batido de Frutas Tropicales.",
+      "descripcionAmplia": " Sumérgete en un oasis de sabor con nuestro Batido de Frutas Tropicales. Preparado con una mezcla de frutas frescas y jugo de naranja recién exprimido, este batido es una auténtica indulgencia para los amantes de los sabores tropicales.  Comenzamos con una selección de frutas frescas de temporada, incluyendo piña jugosa, mango maduro y plátano dulce. Estas frutas se combinan con una generosa porción de jugo de naranja fresco, creando una base refrescante y llena de vitaminas."
     }
   ],
   "usuarios": [
