@@ -1,15 +1,5 @@
 {
-  "productos": [
-    {
-      "nombreProducto": "Cafe",
-      "precio": "2002",
-      "imagen": "https://hnjasjdasd.jpg",
-      "categoria": "2",
-      "descripcionBreve": "adsasdasdas",
-      "descripcionAmplia": "dasdasdasdasdsadasd",
-      "id": "20a8"
-    }
-  ],
+  "productos": [],
   "usuarios": [
     {
       "email": "admin@gmail.com",

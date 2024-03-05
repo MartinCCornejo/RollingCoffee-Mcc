@@ -151,9 +151,10 @@ const AgregarProducto = ({editar,titulo}) => {
             {...register("categoria", { required: "Seleccione una categoría" })}
           >
             <option value="">Seleccione una opción</option>
-            <option value="1">Opción 1</option>
-            <option value="2">Opción 2</option>
-            <option value="3">Opción 3</option>
+            <option value="Bebidas Calientes">Infusiones</option>
+            <option value="Bebidas Frías">Batidos</option>
+            <option value="Pastelería y Dulces">Dulce</option>
+            <option value="Desayunos y Snacks">Salado</option>
           </Form.Select>
           <Form.Text className="text-danger">
             {errors.categoria?.message}
