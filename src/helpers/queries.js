@@ -55,3 +55,21 @@ export async function obtenerProductoAPI(id) {
     console.log(error);
   }
 }
+
+// PUT  
+
+export async function modificarProductoAPI (producto,id) {
+  try {
+    const respuesta = await fetch(`${URI_Producto}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(producto)
+    });
+    console.log(respuesta)
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+}

@@ -1,6 +1,6 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import {crearProductoAPI, obtenerProductoAPI} from "../../helpers/queries";
+import {crearProductoAPI, modificarProductoAPI, obtenerProductoAPI} from "../../helpers/queries";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -39,7 +39,8 @@ const AgregarProducto = ({editar,titulo}) => {
   const onSubmit = async (producto) => {
     if (editar) {
       // Aqui agregar la solicitud a la api para editar un producto
-      console.log('editar')
+      console.log('editar');
+      modificarProductoAPI(producto,producto.id);
     } else {
       // LLamar a la funcion encargada de pedirle a la api crear un producto
       const respuesta = await crearProductoAPI(producto);

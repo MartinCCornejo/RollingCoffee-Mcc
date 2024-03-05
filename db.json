@@ -1,11 +1,11 @@
 {
   "productos": [
     {
-      "id": "ebd5",
+      "id": "20a8",
       "nombreProducto": "Cafe",
-      "precio": "2321",
+      "precio": "2000",
       "imagen": "https://hnjasjdasd.jpg",
-      "categoria": "1",
+      "categoria": "2",
       "descripcionBreve": "adsasdasdas",
       "descripcionAmplia": "dasdasdasdasdsadasd"
     }

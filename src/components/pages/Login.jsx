@@ -10,8 +10,8 @@ const Login = () => {
     reset,
   } = useForm();
 
-  const onSubmit = async (producto) => {
-
+  const onSubmit = async (usuario) => {
+    console.log(usuario)
   }
 
 

@@ -9,7 +9,7 @@ const DetalleProducto = () => {
         <Col md={5} className="mb-4 mb-md-0">
           <img
             src="https://th.bing.com/th/id/OIP.yahamQvZ7L4Placs0V2upwHaLH?rs=1&pid=ImgDetMain"
-            alt="Imagen del producto"
+            alt="Imagen de la receta"
             className="img-detalle"
           />
         </Col>
