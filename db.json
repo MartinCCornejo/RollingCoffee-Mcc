@@ -8,6 +8,24 @@
       "descripcionBreve": "Disfruta de un auténtico sabor italiano con nuestro Espresso Italiano",
       "descripcionAmplia": " Nuestro Espresso Italiano es la esencia misma del café italiano: intenso, aromático y lleno de sabor. Utilizamos una cuidadosa selección de granos de café arábica y robusta, cultivados en las regiones más fértiles del mundo, para garantizar una experiencia de café inigualable.  Cada taza de nuestro Espresso Italiano es preparada por baristas expertos que dominan el arte de la extracción perfecta. El resultado es un espresso equilibrado, con un cuerpo sedoso, un aroma embriagador y un sabor profundo y duradero.",
       "id": "76a5"
+    },
+    {
+      "id": "fa7a",
+      "nombreProducto": "Capuchino Clásico",
+      "precio": "1002",
+      "imagen": "https://www.clarin.com/2022/03/01/ceq4FUBv9_2000x1500__1.jpg",
+      "categoria": "Bebidas Calientes",
+      "descripcionBreve": "Sumérgete en la deliciosa cremosidad de nuestro Capuchino Clásico.",
+      "descripcionAmplia": "Nuestro Capuchino Clásico es una obra maestra de la simplicidad y el sabor. Comenzamos con un espresso de calidad premium, extraído con maestría por nuestros baristas expertos. Luego, la espuma de leche vaporizada se vierte con precisión sobre el espresso, creando una capa cremosa que suaviza el carácter del café y resalta sus notas más sutiles.  El toque final de polvo de cacao sobre la espuma añade un toque de dulzura y complejidad, elevando aún más la experiencia sensorial de nuestro Capuchino Clásico."
+    },
+    {
+      "id": "0a61",
+      "nombreProducto": "Croissant de Chocolate",
+      "precio": "300",
+      "imagen": "https://www.loscaprichosdepatricia.es/151-large_default/croissant-de-chocolate.jpg",
+      "categoria": "Pastelería y Dulces",
+      "descripcionBreve": "Deléitate con nuestro exquisito Croissant de Chocolate.",
+      "descripcionAmplia": "Nuestro Croissant de Chocolate es una obra maestra de la pastelería artesanal. Comenzamos con una masa de hojaldre finamente laminada, que se hornea hasta obtener una textura dorada y crujiente en el exterior, mientras que en el interior se mantiene suave y esponjosa.  El relleno de chocolate se prepara con cuidado, utilizando auténtico chocolate de calidad premium, derretido hasta obtener una consistencia sedosa y deliciosa. Cada bocado de nuestro Croissant de Chocolate es una explosión de sabor, con la combinación perfecta de hojaldre dorado y chocolate derretido."
     }
   ],
   "usuarios": [

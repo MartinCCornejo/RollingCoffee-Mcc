@@ -76,7 +76,7 @@ p,input{
 }
 
 .banner{
-  background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.7))
+  background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.6))
   ,url("./assets/banner.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
