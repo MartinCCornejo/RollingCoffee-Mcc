@@ -74,3 +74,25 @@ p,input{
 .mt-6{
   margin-top: 140px;
 }
+
+.banner{
+  background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.7))
+  ,url("./assets/banner.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.banner h1{
+  color: #fff;
+  text-shadow: 3px 5px 17px rgba(0,0,0,0.9);
+}
+
+.banner p{
+  color: #ddd;
+  text-shadow: 3px 3px 17px rgba(0,0,0,0.5);
+}
