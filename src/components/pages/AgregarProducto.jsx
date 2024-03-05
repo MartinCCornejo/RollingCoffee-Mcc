@@ -2,8 +2,8 @@ import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import {crearProductoAPI, modificarProductoAPI, obtenerProductoAPI} from "../../helpers/queries";
 import Swal from "sweetalert2";
+import { useNavigate, useParams } from "react-router";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
 
 const AgregarProducto = ({editar,titulo}) => {
   const {
@@ -15,6 +15,7 @@ const AgregarProducto = ({editar,titulo}) => {
   } = useForm();
 
   const {id} = useParams();
+  const navegacion = useNavigate();
 
   useEffect(()=> {
     if (editar) {
@@ -23,7 +24,7 @@ const AgregarProducto = ({editar,titulo}) => {
   },[])
 
   async function cargarDatosProductos () {
-    console.log(id)
+    // console.log(id)
     const respuesta = await obtenerProductoAPI(id);
     if (respuesta.status === 200) {
       const productoBuscado = await respuesta.json();
@@ -39,8 +40,24 @@ const AgregarProducto = ({editar,titulo}) => {
   const onSubmit = async (producto) => {
     if (editar) {
       // Aqui agregar la solicitud a la api para editar un producto
-      console.log('editar');
-      modificarProductoAPI(producto,producto.id);
+      // console.log('editar');
+      const respuesta = await modificarProductoAPI(producto,id);
+
+      if (respuesta.status === 200) {
+        Swal.fire({
+          title: "Producto modificado!",
+          text: `El producto '${producto.nombreProducto}' se modifico correctamente.`,
+          icon: "success"
+        });
+        navegacion('/administrador');
+
+      } else {
+        Swal.fire({
+          title: "Ocurrio un error!",
+          text: `El producto '${producto.nombreProducto}' no se pudo modificar correctamente, intente de nuevo en unos minutos.`,
+          icon: "error"
+        });
+      }
     } else {
       // LLamar a la funcion encargada de pedirle a la api crear un producto
       const respuesta = await crearProductoAPI(producto);
