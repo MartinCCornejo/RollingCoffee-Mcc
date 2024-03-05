@@ -34,11 +34,11 @@ function App() {
             </RutasProtegidas>
           }
         ></Route>
-        <Route path="*" element={<Error404></Error404>}></Route>
         {/* <Route exact path="/administrador/agregar-producto" element={<AgregarProducto editar={false} titulo={'Nuevo producto'}></AgregarProducto>}></Route>
         <Route exact path="/administrador/editar-producto/:id" element={<AgregarProducto editar={true}  titulo={'Editar producto'}></AgregarProducto>}></Route>
         <Route exact path="/login" element={<Login></Login>}></Route> */}
         <Route exact path="/detalle-producto/:id" element={<DetalleProducto></DetalleProducto>}></Route> 
+        <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
